@@ -9,6 +9,9 @@ let palavra = ['J','A','V','A','S','C','R','I','P','T']
 indice = 0
 
 // Saidas 
+const img = document.getElementById('forca')
+
+
 let letraJ = document.getElementById("primeiro") // Letra J
 
 let letraAum = document.querySelector(".letraAum") // Letra A
@@ -132,7 +135,31 @@ function VerificarLetra() {
     if (!palavra.includes(input)) {
     img.src = imagens[indice]
     indice++
+    }
+
+    if (indice === imagens.length) {
+        alert('Você perdeu!')
+        reiniciarJogo()
+    }
+
+    function reiniciarJogo() {
+    indice = 0
+    letraDigitada = []
+    img.src = "parte1.png"
+
+    letraJ.innerText = ''
+    letraAum.innerText = ''
+    letraAdois.innerText = ''
+    letraV.innerText = ''
+    letraS.innerText = ''
+    letraC.innerText = ''
+    letraR.innerText = ''
+    letraI.innerText = ''
+    letraP.innerText = ''
+    letraT.innerText = ''
+    r.innerText = ''
 }
+
 
 
 
