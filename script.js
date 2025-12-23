@@ -151,7 +151,14 @@ function VerificarLetra() {
         reiniciarJogo()
     }
 
-    function reiniciarJogo() {
+    
+
+    // Limpa os campos depois que o usuario clica no botão 
+    document.getElementById('letras').value = ''
+
+}
+
+function reiniciarJogo() {
     indice = 0
     letraDigitada = []
     img.src = "parte1.png"
@@ -167,16 +174,5 @@ function VerificarLetra() {
     letraP.innerText = ''
     letraT.innerText = ''
     r.innerText = ''
-}
-
-
-
-
-
-    // POR UMA CONDIÇÃO SÓ PARA O ERRO, AI EU COLOCO O INDICE E A CADA ERRO ELE PERCORRE 1 ITEM DO ARRAY É COMO SE FOSSE UM BOTAO PASSANDO A IMAGENS PARA FRENTE
-
-    // Limpa os campos depois que o usuario clica no botão 
-    document.getElementById('letras').value = ''
-
 }
 
