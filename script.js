@@ -51,7 +51,16 @@ function VerificarLetra() {
     // Essa condição é para caso o usuario deixar o campo sem nada
     if (input === '') {
         alert('Preencha o Campo!')
+        return
     }
+
+
+    // Verificação de ver se a letra Ja foi usada 
+    if (letraDigitada.includes(input)) {
+    alert('Essa letra já foi usada!')
+    return
+    }
+
 
 
     // Para não repetir as letras
