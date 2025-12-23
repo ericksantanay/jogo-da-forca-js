@@ -26,6 +26,13 @@ let letraT = document.getElementById("ultimo") //Letra T
 // Saida das letras que o usuario já digitou
 let r = document.getElementById('resultado')
 
+
+//###########################################
+// Armazenando as letras digitadas 
+//###########################################
+let letraDigitada = []
+
+
 //###########################################
 // Função de verificar as letras e ver se o usuario acertou
 //###########################################
@@ -43,23 +50,59 @@ function VerificarLetra() {
         alert('Escreva uma letra por vez!')
     }
 
+    // lETRA
     // Verificando se tem a letra J
     if (input == 'J') {
         letraJ.innerText = 'J'
     }
 
+    // lETRA
     if (input == 'A') {
         letraAum.innerHTML = 'A'
         letraAdois.innerHTML = 'A'
     }
     
 
+    // lETRA
     if (input == 'V') {
         letraV.innerText = 'V'
     }
 
+    // lETRA
+    if (input == 'S') {
+        letraS.innerText = 'S'
+    }
 
+    // lETRA
+     if (input == 'C') {
+        letraC.innerText = 'C'
+    }
 
+    // lETRA
+     if (input == 'R') {
+        letraR.innerText = 'R'
+    }
+
+    // lETRA
+     if (input == 'I') {
+        letraI.innerText = 'I'
+    }
+
+    // lETRA
+     if (input == 'P') {
+        letraP.innerText = 'P'
+    }
+
+    // lETRA T
+     if (input == 'T') {
+        letraT.innerText = 'T'
+    }
+
+    r.innerHTML = ''
+
+    letraDigitada.push(input)
+
+    r.innerText += (letraDigitada)
 
 
     // POR UMA CONDIÇÃO SÓ PARA O ERRO, AI EU COLOCO O INDICE E A CADA ERRO ELE PERCORRE 1 ITEM DO ARRAY É COMO SE FOSSE UM BOTAO PASSANDO A IMAGENS PARA FRENTE
