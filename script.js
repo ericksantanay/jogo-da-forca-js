@@ -1,5 +1,5 @@
 // Array com as imagens da forca
-let imagens = ["images/parte2.png", "images/parte3.png", "images/parte4.png", "images/parte5.png", "images/parte6.png", "images/parte7.png", "images/parte8.png"]
+let imagens = ["parte2.png", "parte3.png", "parte4.png", "parte5.png", "parte6.png", "parte7.png", "parte8.png"]
 
 // Palavra escolhida!
 let palavra = ['J','A','V','A','S','C','R','I','P','T']
@@ -128,8 +128,13 @@ function VerificarLetra() {
     //###########################################
     //Agora é se o usuario errou
     //###########################################
-    
-    
+
+    if (!palavra.includes(input)) {
+    img.src = imagens[indice]
+    indice++
+}
+
+
 
 
     // POR UMA CONDIÇÃO SÓ PARA O ERRO, AI EU COLOCO O INDICE E A CADA ERRO ELE PERCORRE 1 ITEM DO ARRAY É COMO SE FOSSE UM BOTAO PASSANDO A IMAGENS PARA FRENTE
