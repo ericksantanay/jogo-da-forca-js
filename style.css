@@ -44,6 +44,11 @@ body {
     margin-top: 20px;
 }
 
+.text {
+    border-bottom: 1px solid black;
+    font-size: 23px;
+}
+
 .letras {
     font-weight: 600;
     font-size: 1.6rem;
