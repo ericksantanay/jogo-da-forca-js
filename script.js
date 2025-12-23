@@ -1,6 +1,9 @@
 // Array com as imagens da forca
 let imagens = ["images/parte2.png", "images/parte3.png", "images/parte4.png", "images/parte5.png", "images/parte6.png", "images/parte7.png", "images/parte8.png"]
 
+// Inidice para percorrer 
+indice = 0
+
 // Saidas 
 let letraJ = document.getElementById("primeiro") // Letra J
 
@@ -108,6 +111,13 @@ function VerificarLetra() {
     // Mostrando as letras digitadas na tela 
     r.innerText += (letraDigitada)
 
+    //###########################################
+    //Agora é os erros
+    //###########################################
+
+    let resultadoDasPalavras = document.querySelector('span')
+
+    resultadoDasPalavras.innerText += 'OIIII'
 
     // POR UMA CONDIÇÃO SÓ PARA O ERRO, AI EU COLOCO O INDICE E A CADA ERRO ELE PERCORRE 1 ITEM DO ARRAY É COMO SE FOSSE UM BOTAO PASSANDO A IMAGENS PARA FRENTE
 
