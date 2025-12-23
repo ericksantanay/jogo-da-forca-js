@@ -124,9 +124,12 @@ function VerificarLetra() {
     }
 
 
-
     
-
+    //###########################################
+    //Agora é se o usuario errou
+    //###########################################
+    
+    
 
 
     // POR UMA CONDIÇÃO SÓ PARA O ERRO, AI EU COLOCO O INDICE E A CADA ERRO ELE PERCORRE 1 ITEM DO ARRAY É COMO SE FOSSE UM BOTAO PASSANDO A IMAGENS PARA FRENTE
