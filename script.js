@@ -1,6 +1,10 @@
 // Array com as imagens da forca
 let imagens = ["images/parte2.png", "images/parte3.png", "images/parte4.png", "images/parte5.png", "images/parte6.png", "images/parte7.png", "images/parte8.png"]
 
+// Palavra escolhida!
+let palavra = ['J','A','V','A','S','C','R','I','P','T']
+
+
 // Inidice para percorrer 
 indice = 0
 
@@ -29,12 +33,10 @@ let letraT = document.getElementById("ultimo") //Letra T
 // Saida das letras que o usuario já digitou
 let r = document.getElementById('resultado')
 
-
 //###########################################
 // Armazenando as letras digitadas 
 //###########################################
 let letraDigitada = []
-
 
 //###########################################
 // Função de verificar as letras e ver se o usuario acertou
@@ -112,12 +114,20 @@ function VerificarLetra() {
     r.innerText += (letraDigitada)
 
     //###########################################
-    //Agora é os erros
+    //Agora é se o usuario acertou
     //###########################################
+    
+    const ganhou = palavra.every(letra => letraDigitada.includes(letra))
 
-    let resultadoDasPalavras = document.querySelector('span')
+    if (ganhou) {
+    alert('Parabéns, você acertou a palavra!')
+    }
 
-    resultadoDasPalavras.innerText += 'OIIII'
+
+
+    
+
+
 
     // POR UMA CONDIÇÃO SÓ PARA O ERRO, AI EU COLOCO O INDICE E A CADA ERRO ELE PERCORRE 1 ITEM DO ARRAY É COMO SE FOSSE UM BOTAO PASSANDO A IMAGENS PARA FRENTE
 
