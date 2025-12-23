@@ -54,56 +54,58 @@ function VerificarLetra() {
         alert('Escreva uma letra por vez!')
     }
 
-    // lETRA
+    // lETRA 'J'
     // Verificando se tem a letra J
     if (input == 'J') {
         letraJ.innerText = 'J'
     }
 
-    // lETRA
+    // lETRA 'A'
     if (input == 'A') {
         letraAum.innerHTML = 'A'
         letraAdois.innerHTML = 'A'
     }
     
 
-    // lETRA
+    // lETRA 'V'
     if (input == 'V') {
         letraV.innerText = 'V'
     }
 
-    // lETRA
+    // lETRA 'S'
     if (input == 'S') {
         letraS.innerText = 'S'
     }
 
-    // lETRA
+    // lETRA 'C'
      if (input == 'C') {
         letraC.innerText = 'C'
     }
 
-    // lETRA
+    // lETRA 'R'
      if (input == 'R') {
         letraR.innerText = 'R'
     }
 
-    // lETRA
+    // lETRA 'I'
      if (input == 'I') {
         letraI.innerText = 'I'
     }
 
-    // lETRA
+    // lETRA 'P'
      if (input == 'P') {
         letraP.innerText = 'P'
     }
 
-    // lETRA T
+    // lETRA 'T'
      if (input == 'T') {
         letraT.innerText = 'T'
     }
 
+    // Pegando o valor digitado no input colocando no array e mostrando na tela
     letraDigitada.push(input)
 
+    // Mostrando as letras digitadas na tela 
     r.innerText += (letraDigitada)
 
 
