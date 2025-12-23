@@ -45,6 +45,10 @@ function VerificarLetra() {
         alert('Preencha o Campo!')
     }
 
+
+    // Para não repetir as letras
+    r.innerHTML = ''
+
     // Essa condição é para caso o usuario digitar mais do que 1 letra
     if (input.length > 1) {
         alert('Escreva uma letra por vez!')
@@ -97,8 +101,6 @@ function VerificarLetra() {
      if (input == 'T') {
         letraT.innerText = 'T'
     }
-
-    r.innerHTML = ''
 
     letraDigitada.push(input)
 
